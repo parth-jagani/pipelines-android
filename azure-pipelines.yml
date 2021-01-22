@@ -32,10 +32,17 @@ steps:
     artifactName: 'drop'
     artifactType: 'container'
   displayName: Publish artifacts
+
+- task: DownloadSecureFile@1
+  name: jkgames_common
+  inputs:
+    secureFile: 'jkgames_common.jks'
+  displayName: Download JKS
+
 - task: AndroidSigning@3
   inputs:
     apkFiles: '**/*.apk'
-    apksignerKeystoreFile: 'jkgames_common.jks'
+    apksignerKeystoreFile: 'jkgames_common'
     apksignerKeystorePassword: 'Ganesha@005'
     apksignerKeystoreAlias: 'jkgames_common'
     apksignerKeyPassword: 'Ganesha@005'
