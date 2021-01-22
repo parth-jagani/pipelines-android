@@ -44,6 +44,6 @@ steps:
     apkFiles: '**/*.apk'
     apksignerKeystoreFile: 'jkgames_common.jks'
     apksignerKeystorePassword: 'Ganesha@005'
-    apksignerKeystoreAlias: 'jkgames_common'
+    apksignerKeystoreAlias: 'key0'
     apksignerKeyPassword: 'Ganesha@005'
     zipalign: false
