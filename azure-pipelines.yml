@@ -39,3 +39,4 @@ steps:
     apksignerKeystorePassword: 'Ganesha@005'
     apksignerKeystoreAlias: 'jkgames_common'
     apksignerKeyPassword: 'Ganesha@005'
+    zipalign: false
