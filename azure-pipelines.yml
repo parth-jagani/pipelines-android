@@ -42,7 +42,7 @@ steps:
 - task: AndroidSigning@3
   inputs:
     apkFiles: '**/*.apk'
-    apksignerKeystoreFile: 'jkgames_common'
+    apksignerKeystoreFile: 'jkgames_common.jks'
     apksignerKeystorePassword: 'Ganesha@005'
     apksignerKeystoreAlias: 'jkgames_common'
     apksignerKeyPassword: 'Ganesha@005'
