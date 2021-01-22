@@ -47,3 +47,6 @@ steps:
     apksignerKeystoreAlias: 'key0'
     apksignerKeyPassword: 'Ganesha@005'
     zipalign: false
+- task: DownloadPipelineArtifact@2
+  inputs:
+    patterns: '**/*.apk'
